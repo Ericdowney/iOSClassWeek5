@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.requestMovies { [weak self] _ in
+        viewModel.requestMovies { [weak self] in
             self?.movieTable?.reloadData()
         }
     }

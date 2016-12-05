@@ -8,15 +8,15 @@
 
 import Foundation
 
-class Singleton: DataManager {
+public class Singleton: DataManager {
     static let shared: Singleton = Singleton()
     
     private init() {}
     
-    func create(data: Any) {
+    public func create(data: Any) {
         print("Create: \(data)")
     }
-    func delete(data: Any) {
+    public func delete(data: Any) {
         print("Delete: \(data)")
     }
     

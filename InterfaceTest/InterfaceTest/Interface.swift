@@ -8,7 +8,7 @@
 
 // MARK: - Interfaces
 
-protocol DataManager {
+public protocol DataManager {
     func create(data: Any)
     func delete(data: Any)
 }
